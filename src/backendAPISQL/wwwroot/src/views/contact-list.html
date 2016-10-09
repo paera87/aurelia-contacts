@@ -1,0 +1,13 @@
+﻿<template>
+    <div class="contact-list">
+        <table class="table">
+            <tr repeat.for="contact of contacts">
+                <td>
+                    <a route-href="route: contacts; params.bind: {id:contact.id}">
+                        ${contact.firstName} ${contact.id}
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</template>
